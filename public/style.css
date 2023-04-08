@@ -12,23 +12,25 @@ body {
 }
 
 main {
-  width: 80vw;
-  height: 80vh;
-
   padding: 1rem;
 
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .board {
-  flex-grow: 1;
   display: grid;
+  font-size: 2rem;
   gap: 2px;
   background-color: black;
-  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(100px, 1fr));
 }
 
 .board > span {
+  aspect-ratio: 1;
   background-color: antiquewhite;
+
+  display: grid;
+  place-content: center;
 }
