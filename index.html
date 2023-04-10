@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <form class="name-form" action="" method="post">
+        <div class="form-wrapper">
+          <label for="player1-name">Player 1 name</label>
+          <input id="player1-name" name="player1-name" type="text" required />
+        </div>
+        <div class="form-wrapper">
+          <label for="player2-name">Player 2 name</label>
+          <input
+            id="player2-name"
+            name="player2-name"
+            type="text"
+            placeholder="Leave empty for AI"
+          />
+        </div>
+        <button>Start game</button>
+      </form>
+      <h1 class="turn"></h1>
+      <div class="board">
+        <span class="board-element" data-row="0" data-column="0"></span>
+        <span class="board-element" data-row="0" data-column="1"></span>
+        <span class="board-element" data-row="0" data-column="2"></span>
+        <span class="board-element" data-row="1" data-column="0"></span>
+        <span class="board-element" data-row="1" data-column="1"></span>
+        <span class="board-element" data-row="1" data-column="2"></span>
+        <span class="board-element" data-row="2" data-column="0"></span>
+        <span class="board-element" data-row="2" data-column="1"></span>
+        <span class="board-element" data-row="2" data-column="2"></span>
+      </div>
+    </main>
+    <script src="index.js" type="module" defer></script>
+  </body>
+</html>

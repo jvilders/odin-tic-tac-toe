@@ -1,0 +1,1 @@
+{"version":3,"file":"player.js","sourceRoot":"","sources":["../../../../src/presentationController/gameController/gameBoard/player.ts"],"names":[],"mappings":"AAGA,MAAM,CAAC,OAAO,UAAU,UAAU,CAChC,IAAY,EACZ,IAA+C;IAE/C,SAAS,OAAO;QACd,OAAO,IAAI,CAAC;IACd,CAAC;IAED,SAAS,OAAO;QACd,OAAO,IAAI,CAAC;IACd,CAAC;IAED,OAAO,EAAE,OAAO,EAAE,OAAO,EAAE,CAAC;AAC9B,CAAC"}
