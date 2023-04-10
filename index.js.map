@@ -1,1 +1,1 @@
-{"version":3,"file":"index.js","sourceRoot":"","sources":["../src/index.ts"],"names":[],"mappings":"AAAA,OAAO,sBAAsB,MAAM,mCAAmC,CAAC;AAEvE,sBAAsB,EAAE,CAAC"}
+{"version":3,"file":"index.js","sourceRoot":"","sources":["../src/index.ts"],"names":[],"mappings":"AAAA,OAAO,sBAAsB,MAAM,mCAAmC,CAAC;AAEvE,sBAAsB,EAAE,CAAC","sourcesContent":["import presentationController from \"./presentationController/index.js\";\n\npresentationController();\n"]}
