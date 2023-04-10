@@ -4,6 +4,13 @@
   padding: 0;
 }
 
+:root {
+  --background-color: white;
+  --button-color: blue;
+  --board-cell-color: antiquewhite;
+  --board-grid-color: black;
+}
+
 body {
   display: grid;
   place-content: center;
@@ -23,14 +30,44 @@ main {
   display: grid;
   font-size: 2rem;
   gap: 2px;
-  background-color: black;
+  background-color: var(--board-grid-color);
   grid-template-columns: repeat(3, minmax(100px, 1fr));
 }
 
 .board > span {
   aspect-ratio: 1;
-  background-color: antiquewhite;
+  background-color: var(--board-cell-color);
 
   display: grid;
   place-content: center;
+}
+
+.form-wrapper + .form-wrapper {
+  margin-bottom: 1rem;
+}
+
+button {
+  display: block;
+  margin-inline: auto;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+
+  appearance: none;
+  padding: 0.5rem 1.5rem;
+
+  color: aliceblue;
+  background-color: var(--button-color);
+  border-radius: 8px;
+  border: none;
+
+  box-shadow: 0 0 0 2px var(--background-color), 0 0 0 4px var(--button-color);
+}
+
+button:is(:hover, :focus) {
+  filter: saturate(80%);
+}
+
+button:active {
+  filter: saturate(50%);
+  scale: 0.9;
 }
